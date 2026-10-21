@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Subtle ledger paper line pattern */
+.bg-ledger-lines {
+  background-image: linear-gradient(#e7ded0 1px, transparent 1px);
+  background-size: 100% 28px;
+}
+
+/* Red margin line like Indian Bahi-Khata diary */
+.bahi-khata-margin {
+  border-left: 2px solid rgba(214, 69, 69, 0.35);
+}

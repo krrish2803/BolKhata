@@ -1,0 +1,859 @@
+{
+  "datasetSha256": "8034b19855e91756cc25d2403e66a78237ac74f53ca98ae21a69da8efe1ef88a",
+  "datasetPath": "/Users/krrishyaduka/Documents/BolKhata/eval/dev.json",
+  "totalCases": 26,
+  "headlines": {
+    "gemini": "1 of 1 on gemini (100.0%)",
+    "nvidia": "10 of 23 on nvidia (43.5%)"
+  },
+  "engineStats": {
+    "gemini": {
+      "PASS": 1,
+      "FAIL": 0,
+      "ERROR": 0,
+      "SKIPPED": 0
+    },
+    "nvidia": {
+      "PASS": 10,
+      "FAIL": 13,
+      "ERROR": 2,
+      "SKIPPED": 0
+    }
+  },
+  "engineCases": {
+    "gemini": [
+      "case-1"
+    ],
+    "nvidia": [
+      "case-2",
+      "case-3",
+      "case-4",
+      "case-5",
+      "case-6",
+      "case-7",
+      "case-8",
+      "case-9",
+      "case-10",
+      "case-11",
+      "case-12",
+      "case-13",
+      "case-14",
+      "case-15",
+      "case-16",
+      "case-17",
+      "case-18",
+      "case-19",
+      "case-20",
+      "case-21",
+      "case-22",
+      "case-23",
+      "case-24",
+      "case-25",
+      "case-26"
+    ]
+  },
+  "failures": [
+    {
+      "id": "case-2",
+      "caseIndex": 2,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Sharma Sir ko ek coat blazer aur do silk tie diya, poora cash 5400",
+      "failedFields": [
+        "customer"
+      ],
+      "expected": {
+        "customer": "Sharma Sir",
+        "lines": [
+          {
+            "name": "Casual Blazer",
+            "qty": 1,
+            "price": 4500
+          },
+          {
+            "name": "Silk Tie",
+            "qty": 2,
+            "price": 450
+          }
+        ],
+        "total": 5400,
+        "paid": 5400,
+        "due": 0
+      },
+      "got": {
+        "customer": "Verma ji",
+        "lines": [
+          {
+            "name": "Casual Blazer",
+            "qty": 1,
+            "price": 4500
+          },
+          {
+            "name": "Silk Tie",
+            "qty": 2,
+            "price": 450
+          }
+        ],
+        "total": 5400,
+        "paid": 5400,
+        "due": 0
+      }
+    },
+    {
+      "id": "case-3",
+      "caseIndex": 3,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Verma ji ne teen jeans liya, bill 6600, 3000 cash diya baaki udhar",
+      "failedFields": [
+        "customer"
+      ],
+      "expected": {
+        "customer": "Verma ji",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 3,
+            "price": 2200
+          }
+        ],
+        "total": 6600,
+        "paid": 3000,
+        "due": 3600
+      },
+      "got": {
+        "customer": "Sharma Sir",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 3,
+            "price": 2200
+          }
+        ],
+        "total": 6600,
+        "paid": 3000,
+        "due": 3600
+      }
+    },
+    {
+      "id": "case-11",
+      "caseIndex": 11,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Khan saab ne do kurta aur ek pajama liya, 3800 bill, poora udhaar",
+      "failedFields": [
+        "items"
+      ],
+      "expected": {
+        "customer": "Khan Bhai",
+        "lines": [
+          {
+            "name": "Cotton Kurta",
+            "qty": 2,
+            "price": 1500
+          },
+          {
+            "name": "Linen Pajama",
+            "qty": 1,
+            "price": 800
+          }
+        ],
+        "total": 3800,
+        "paid": 0,
+        "due": 3800
+      },
+      "got": {
+        "customer": "Khan Bhai",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 2,
+            "price": 2200
+          },
+          {
+            "name": "Linen Pajama",
+            "qty": 1,
+            "price": 800
+          }
+        ],
+        "total": 3800,
+        "paid": 0,
+        "due": 3800
+      }
+    },
+    {
+      "id": "case-12",
+      "caseIndex": 12,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Gupta ji ko teen trouser diye, 5400 total, 5000 diya 400 baaki",
+      "failedFields": [
+        "customer"
+      ],
+      "expected": {
+        "customer": "Gupta Hardware",
+        "lines": [
+          {
+            "name": "Trouser",
+            "qty": 3,
+            "price": 1800
+          }
+        ],
+        "total": 5400,
+        "paid": 5000,
+        "due": 400
+      },
+      "got": {
+        "customer": "Verma ji",
+        "lines": [
+          {
+            "name": "Trouser",
+            "qty": 3,
+            "price": 1800
+          }
+        ],
+        "total": 5400,
+        "paid": 5000,
+        "due": 400
+      }
+    },
+    {
+      "id": "case-13",
+      "caseIndex": 13,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Mishraji ne chhe underwear vest liya, 1500 bill, 1500 poora cash",
+      "failedFields": [
+        "quantities"
+      ],
+      "expected": {
+        "customer": "Mishra Cloth",
+        "lines": [
+          {
+            "name": "Innerwear Vest",
+            "qty": 6,
+            "price": 250
+          }
+        ],
+        "total": 1500,
+        "paid": 1500,
+        "due": 0
+      },
+      "got": {
+        "customer": "Mishra Cloth",
+        "lines": [
+          {
+            "name": "Innerwear Vest",
+            "qty": 1,
+            "price": 1500
+          }
+        ],
+        "total": 1500,
+        "paid": 1500,
+        "due": 0
+      }
+    },
+    {
+      "id": "case-15",
+      "caseIndex": 15,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Chopra ji ko ek jeans aur do t shirt nahi shorts diya, 3200 bill, 1000 cash",
+      "failedFields": [
+        "items",
+        "quantities"
+      ],
+      "expected": {
+        "customer": "Chopra Saab",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 1,
+            "price": 2200
+          },
+          {
+            "name": "Cotton Shorts",
+            "qty": 2,
+            "price": 500
+          }
+        ],
+        "total": 3200,
+        "paid": 1000,
+        "due": 2200
+      },
+      "got": {
+        "customer": "Chopra Saab",
+        "lines": [
+          {
+            "name": "Cotton Shorts",
+            "qty": 1,
+            "price": 500
+          }
+        ],
+        "total": 3200,
+        "paid": 1000,
+        "due": 2200
+      }
+    },
+    {
+      "id": "case-17",
+      "caseIndex": 17,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Vermaji ne char pant trouser liya, total 7200, 5000 diya baaki udhar",
+      "failedFields": [
+        "customer",
+        "quantities"
+      ],
+      "expected": {
+        "customer": "Verma ji",
+        "lines": [
+          {
+            "name": "Trouser",
+            "qty": 4,
+            "price": 1800
+          }
+        ],
+        "total": 7200,
+        "paid": 5000,
+        "due": 2200
+      },
+      "got": {
+        "customer": "Sharma Sir",
+        "lines": [
+          {
+            "name": "Trouser",
+            "qty": 3,
+            "price": 2400
+          }
+        ],
+        "total": 7200,
+        "paid": 5000,
+        "due": 2200
+      }
+    },
+    {
+      "id": "case-18",
+      "caseIndex": 18,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Khan bhai ko das socks moja aur do rumaal diya, total 1320, 1000 abhi diya",
+      "failedFields": [
+        "quantities"
+      ],
+      "expected": {
+        "customer": "Khan Bhai",
+        "lines": [
+          {
+            "name": "Cotton Socks",
+            "qty": 10,
+            "price": 120
+          },
+          {
+            "name": "Linen Handkerchief",
+            "qty": 2,
+            "price": 60
+          }
+        ],
+        "total": 1320,
+        "paid": 1000,
+        "due": 320
+      },
+      "got": {
+        "customer": "Khan Bhai",
+        "lines": [
+          {
+            "name": "Cotton Socks",
+            "qty": 11,
+            "price": 120
+          },
+          {
+            "name": "Linen Handkerchief",
+            "qty": 2,
+            "price": 60
+          }
+        ],
+        "total": 1320,
+        "paid": 1000,
+        "due": 320
+      }
+    },
+    {
+      "id": "case-20",
+      "caseIndex": 20,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Patel bhai ko teen kurta aur teen pajama diye, 6900 bill, 3500 diya baaki udhaar",
+      "failedFields": [
+        "customer",
+        "items"
+      ],
+      "expected": {
+        "customer": "Patel Tailor",
+        "lines": [
+          {
+            "name": "Cotton Kurta",
+            "qty": 3,
+            "price": 1500
+          },
+          {
+            "name": "Linen Pajama",
+            "qty": 3,
+            "price": 800
+          }
+        ],
+        "total": 6900,
+        "paid": 3500,
+        "due": 3400
+      },
+      "got": {
+        "customer": "Chopra Saab",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 3,
+            "price": 2200
+          },
+          {
+            "name": "Linen Pajama",
+            "qty": 3,
+            "price": 800
+          }
+        ],
+        "total": 6900,
+        "paid": 3500,
+        "due": 3400
+      }
+    },
+    {
+      "id": "case-22",
+      "caseIndex": 22,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Verma ji ko do trouser pant nahi teen trouser pant diye, 5400 bill, 2000 cash",
+      "failedFields": [
+        "customer"
+      ],
+      "expected": {
+        "customer": "Verma ji",
+        "lines": [
+          {
+            "name": "Trouser",
+            "qty": 3,
+            "price": 1800
+          }
+        ],
+        "total": 5400,
+        "paid": 2000,
+        "due": 3400
+      },
+      "got": {
+        "customer": "Sharma Sir",
+        "lines": [
+          {
+            "name": "Trouser",
+            "qty": 3,
+            "price": 1800
+          }
+        ],
+        "total": 5400,
+        "paid": 2000,
+        "due": 3400
+      }
+    },
+    {
+      "id": "case-23",
+      "caseIndex": 23,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Gupta ji ko ek blazer aur do tie nahi belt diye, 5800 total, 3000 diya",
+      "failedFields": [
+        "items"
+      ],
+      "expected": {
+        "customer": "Gupta Hardware",
+        "lines": [
+          {
+            "name": "Casual Blazer",
+            "qty": 1,
+            "price": 4500
+          },
+          {
+            "name": "Leather Belt",
+            "qty": 2,
+            "price": 650
+          }
+        ],
+        "total": 5800,
+        "paid": 3000,
+        "due": 2800
+      },
+      "got": {
+        "customer": "Gupta Hardware",
+        "lines": [
+          {
+            "name": "Casual Blazer",
+            "qty": 1,
+            "price": 4500
+          },
+          {
+            "name": "Silk Tie",
+            "qty": 2,
+            "price": 450
+          }
+        ],
+        "total": 5800,
+        "paid": 3000,
+        "due": 2800
+      }
+    },
+    {
+      "id": "case-25",
+      "caseIndex": 25,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Khan bhai ko do jeans diye, bill 4400, 1000 cash nahi 2000 cash diya baaki udhaar",
+      "failedFields": [
+        "paid",
+        "due"
+      ],
+      "expected": {
+        "customer": "Khan Bhai",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 2,
+            "price": 2200
+          }
+        ],
+        "total": 4400,
+        "paid": 2000,
+        "due": 2400
+      },
+      "got": {
+        "customer": "Khan Bhai",
+        "lines": [
+          {
+            "name": "Denim Jeans",
+            "qty": 2,
+            "price": 2200
+          }
+        ],
+        "total": 4400,
+        "paid": 3000,
+        "due": 1400
+      }
+    },
+    {
+      "id": "case-26",
+      "caseIndex": 26,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "text": "Chopra saab ko ek pajama diya 800 bill, actually Chopra ji nahi Patel bhai ko diya poora udhaar",
+      "failedFields": [
+        "customer"
+      ],
+      "expected": {
+        "customer": "Patel Tailor",
+        "lines": [
+          {
+            "name": "Linen Pajama",
+            "qty": 1,
+            "price": 800
+          }
+        ],
+        "total": 800,
+        "paid": 0,
+        "due": 800
+      },
+      "got": {
+        "customer": "Chopra Saab",
+        "lines": [
+          {
+            "name": "Linen Pajama",
+            "qty": 1,
+            "price": 800
+          }
+        ],
+        "total": 800,
+        "paid": 0,
+        "due": 800
+      }
+    }
+  ],
+  "errors": [
+    {
+      "id": "case-7",
+      "reason": "Model engine failed: The read operation timed out",
+      "engine": "nvidia"
+    },
+    {
+      "id": "case-10",
+      "reason": "Model engine failed: The read operation timed out",
+      "engine": "nvidia"
+    }
+  ],
+  "skipped": [],
+  "caseAuditLog": [
+    {
+      "id": "case-1",
+      "index": 1,
+      "engine": "gemini",
+      "model": "gemini-2.5-flash",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 0,
+      "text": "Sharma ji ko do shirt aur ek trouser diye, 4200 bill, 2000 abhi diya, baaki udhaar"
+    },
+    {
+      "id": "case-2",
+      "index": 2,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer']",
+      "latencyMs": 9415,
+      "text": "Sharma Sir ko ek coat blazer aur do silk tie diya, poora cash 5400"
+    },
+    {
+      "id": "case-3",
+      "index": 3,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer']",
+      "latencyMs": 6553,
+      "text": "Verma ji ne teen jeans liya, bill 6600, 3000 cash diya baaki udhar"
+    },
+    {
+      "id": "case-4",
+      "index": 4,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 10262,
+      "text": "Mishra ji ko do cotton kurta aur do pajama diye, pachas sau bill, do hazaar diya baaki baad mein"
+    },
+    {
+      "id": "case-5",
+      "index": 5,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 6294,
+      "text": "Khan bhai ne char shirt liya, pachis sau bill, poora cash"
+    },
+    {
+      "id": "case-6",
+      "index": 6,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 8857,
+      "text": "Gupta ji ko do belt aur char moja diya, total 1780, ek rupaye nahi diya poora baaki"
+    },
+    {
+      "id": "case-7",
+      "index": 7,
+      "engine": "nvidia",
+      "model": "unknown",
+      "outcome": "ERROR",
+      "reason": "Model engine failed: The read operation timed out",
+      "latencyMs": 0,
+      "text": "Patel bhai ko ek pant aur do baniyan diya, 2300 bill, 1500 naqad diya"
+    },
+    {
+      "id": "case-8",
+      "index": 8,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 6590,
+      "text": "Chopra saab ne paanch rumaal handkerchief aur ek boxer shorts liya, total 800, poora cash"
+    },
+    {
+      "id": "case-9",
+      "index": 9,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 9951,
+      "text": "\u0936\u0930\u094d\u092e\u093e \u091c\u0940 \u0915\u094b \u0926\u094b \u0936\u0930\u094d\u091f \u0926\u093f\u090f, \u091a\u094c\u092c\u0940\u0938 \u0938\u094c \u092c\u093f\u0932, \u090f\u0915 \u0939\u091c\u093c\u093e\u0930 \u0928\u0915\u0926"
+    },
+    {
+      "id": "case-10",
+      "index": 10,
+      "engine": "nvidia",
+      "model": "unknown",
+      "outcome": "ERROR",
+      "reason": "Model engine failed: The read operation timed out",
+      "latencyMs": 0,
+      "text": "Verma ji ko ek blazer aur ek tie, 4950 bill, 2500 abhi diya baaki udhaar"
+    },
+    {
+      "id": "case-11",
+      "index": 11,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['items']",
+      "latencyMs": 12526,
+      "text": "Khan saab ne do kurta aur ek pajama liya, 3800 bill, poora udhaar"
+    },
+    {
+      "id": "case-12",
+      "index": 12,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer']",
+      "latencyMs": 13077,
+      "text": "Gupta ji ko teen trouser diye, 5400 total, 5000 diya 400 baaki"
+    },
+    {
+      "id": "case-13",
+      "index": 13,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['quantities']",
+      "latencyMs": 7797,
+      "text": "Mishraji ne chhe underwear vest liya, 1500 bill, 1500 poora cash"
+    },
+    {
+      "id": "case-14",
+      "index": 14,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 10552,
+      "text": "Patel ji ko do leather belt aur do shirt diye, total 3700, 2000 diya baaki udhaar"
+    },
+    {
+      "id": "case-15",
+      "index": 15,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['items', 'quantities']",
+      "latencyMs": 4670,
+      "text": "Chopra ji ko ek jeans aur do t shirt nahi shorts diya, 3200 bill, 1000 cash"
+    },
+    {
+      "id": "case-16",
+      "index": 16,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 3701,
+      "text": "Sharma Sir ko teen kameez formal shirt diya, total 3600, poora advance diya"
+    },
+    {
+      "id": "case-17",
+      "index": 17,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer', 'quantities']",
+      "latencyMs": 3553,
+      "text": "Vermaji ne char pant trouser liya, total 7200, 5000 diya baaki udhar"
+    },
+    {
+      "id": "case-18",
+      "index": 18,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['quantities']",
+      "latencyMs": 7151,
+      "text": "Khan bhai ko das socks moja aur do rumaal diya, total 1320, 1000 abhi diya"
+    },
+    {
+      "id": "case-19",
+      "index": 19,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 6153,
+      "text": "Gupta hardware ko ek blazer coat diya, 4500 bill, 4500 cash"
+    },
+    {
+      "id": "case-20",
+      "index": 20,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer', 'items']",
+      "latencyMs": 4288,
+      "text": "Patel bhai ko teen kurta aur teen pajama diye, 6900 bill, 3500 diya baaki udhaar"
+    },
+    {
+      "id": "case-21",
+      "index": 21,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 10801,
+      "text": "Sharma ji ko nahi nahi Sharma Sir ko do shirt diye, 2400 bill, poora cash"
+    },
+    {
+      "id": "case-22",
+      "index": 22,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer']",
+      "latencyMs": 6457,
+      "text": "Verma ji ko do trouser pant nahi teen trouser pant diye, 5400 bill, 2000 cash"
+    },
+    {
+      "id": "case-23",
+      "index": 23,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['items']",
+      "latencyMs": 9227,
+      "text": "Gupta ji ko ek blazer aur do tie nahi belt diye, 5800 total, 3000 diya"
+    },
+    {
+      "id": "case-24",
+      "index": 24,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "PASS",
+      "reason": null,
+      "latencyMs": 5006,
+      "text": "Mishra ji ko ek kurta diya, bill 2000 sorry 1500 bill, poora cash"
+    },
+    {
+      "id": "case-25",
+      "index": 25,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['paid', 'due']",
+      "latencyMs": 5353,
+      "text": "Khan bhai ko do jeans diye, bill 4400, 1000 cash nahi 2000 cash diya baaki udhaar"
+    },
+    {
+      "id": "case-26",
+      "index": 26,
+      "engine": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "outcome": "FAIL",
+      "reason": "Failed fields: ['customer']",
+      "latencyMs": 3481,
+      "text": "Chopra saab ko ek pajama diya 800 bill, actually Chopra ji nahi Patel bhai ko diya poora udhaar"
+    }
+  ]
+}

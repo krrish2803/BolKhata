@@ -1,0 +1,327 @@
+[
+  {
+    "text": "Sharma ji ko do shirt aur ek trouser diye, 4200 bill, 2000 abhi diya, baaki udhaar",
+    "expected": {
+      "customer": "Sharma ji",
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "price": 1200},
+        {"name": "Trouser", "qty": 1, "price": 1800}
+      ],
+      "total": 4200,
+      "paid": 2000,
+      "due": 2200
+    }
+  },
+  {
+    "text": "Sharma Sir ko ek coat blazer aur do silk tie diya, poora cash 5400",
+    "expected": {
+      "customer": "Sharma Sir",
+      "lines": [
+        {"name": "Casual Blazer", "qty": 1, "price": 4500},
+        {"name": "Silk Tie", "qty": 2, "price": 450}
+      ],
+      "total": 5400,
+      "paid": 5400,
+      "due": 0
+    }
+  },
+  {
+    "text": "Verma ji ne teen jeans liya, bill 6600, 3000 cash diya baaki udhar",
+    "expected": {
+      "customer": "Verma ji",
+      "lines": [
+        {"name": "Denim Jeans", "qty": 3, "price": 2200}
+      ],
+      "total": 6600,
+      "paid": 3000,
+      "due": 3600
+    }
+  },
+  {
+    "text": "Mishra ji ko do cotton kurta aur do pajama diye, pachas sau bill, do hazaar diya baaki baad mein",
+    "expected": {
+      "customer": "Mishra Cloth",
+      "lines": [
+        {"name": "Cotton Kurta", "qty": 2, "price": 1500},
+        {"name": "Linen Pajama", "qty": 2, "price": 800}
+      ],
+      "total": 5000,
+      "paid": 2000,
+      "due": 3000
+    }
+  },
+  {
+    "text": "Khan bhai ne char shirt liya, pachis sau bill, poora cash",
+    "expected": {
+      "customer": "Khan Bhai",
+      "lines": [
+        {"name": "Formal Shirt", "qty": 4, "price": 1200}
+      ],
+      "total": 2500,
+      "paid": 2500,
+      "due": 0
+    }
+  },
+  {
+    "text": "Gupta ji ko do belt aur char moja diya, total 1780, ek rupaye nahi diya poora baaki",
+    "expected": {
+      "customer": "Gupta Hardware",
+      "lines": [
+        {"name": "Leather Belt", "qty": 2, "price": 650},
+        {"name": "Cotton Socks", "qty": 4, "price": 120}
+      ],
+      "total": 1780,
+      "paid": 0,
+      "due": 1780
+    }
+  },
+  {
+    "text": "Patel bhai ko ek pant aur do baniyan diya, 2300 bill, 1500 naqad diya",
+    "expected": {
+      "customer": "Patel Tailor",
+      "lines": [
+        {"name": "Trouser", "qty": 1, "price": 1800},
+        {"name": "Innerwear Vest", "qty": 2, "price": 250}
+      ],
+      "total": 2300,
+      "paid": 1500,
+      "due": 800
+    }
+  },
+  {
+    "text": "Chopra saab ne paanch rumaal handkerchief aur ek boxer shorts liya, total 800, poora cash",
+    "expected": {
+      "customer": "Chopra Saab",
+      "lines": [
+        {"name": "Linen Handkerchief", "qty": 5, "price": 60},
+        {"name": "Cotton Shorts", "qty": 1, "price": 500}
+      ],
+      "total": 800,
+      "paid": 800,
+      "due": 0
+    }
+  },
+  {
+    "text": "शर्मा जी को दो शर्ट दिए, चौबीस सौ बिल, एक हज़ार नकद",
+    "expected": {
+      "customer": "Sharma ji",
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "price": 1200}
+      ],
+      "total": 2400,
+      "paid": 1000,
+      "due": 1400
+    }
+  },
+  {
+    "text": "Verma ji ko ek blazer aur ek tie, 4950 bill, 2500 abhi diya baaki udhaar",
+    "expected": {
+      "customer": "Verma ji",
+      "lines": [
+        {"name": "Casual Blazer", "qty": 1, "price": 4500},
+        {"name": "Silk Tie", "qty": 1, "price": 450}
+      ],
+      "total": 4950,
+      "paid": 2500,
+      "due": 2450
+    }
+  },
+  {
+    "text": "Khan saab ne do kurta aur ek pajama liya, 3800 bill, poora udhaar",
+    "expected": {
+      "customer": "Khan Bhai",
+      "lines": [
+        {"name": "Cotton Kurta", "qty": 2, "price": 1500},
+        {"name": "Linen Pajama", "qty": 1, "price": 800}
+      ],
+      "total": 3800,
+      "paid": 0,
+      "due": 3800
+    }
+  },
+  {
+    "text": "Gupta ji ko teen trouser diye, 5400 total, 5000 diya 400 baaki",
+    "expected": {
+      "customer": "Gupta Hardware",
+      "lines": [
+        {"name": "Trouser", "qty": 3, "price": 1800}
+      ],
+      "total": 5400,
+      "paid": 5000,
+      "due": 400
+    }
+  },
+  {
+    "text": "Mishraji ne chhe underwear vest liya, 1500 bill, 1500 poora cash",
+    "expected": {
+      "customer": "Mishra Cloth",
+      "lines": [
+        {"name": "Innerwear Vest", "qty": 6, "price": 250}
+      ],
+      "total": 1500,
+      "paid": 1500,
+      "due": 0
+    }
+  },
+  {
+    "text": "Patel ji ko do leather belt aur do shirt diye, total 3700, 2000 diya baaki udhaar",
+    "expected": {
+      "customer": "Patel Tailor",
+      "lines": [
+        {"name": "Leather Belt", "qty": 2, "price": 650},
+        {"name": "Formal Shirt", "qty": 2, "price": 1200}
+      ],
+      "total": 3700,
+      "paid": 2000,
+      "due": 1700
+    }
+  },
+  {
+    "text": "Chopra ji ko ek jeans aur do t shirt nahi shorts diya, 3200 bill, 1000 cash",
+    "expected": {
+      "customer": "Chopra Saab",
+      "lines": [
+        {"name": "Denim Jeans", "qty": 1, "price": 2200},
+        {"name": "Cotton Shorts", "qty": 2, "price": 500}
+      ],
+      "total": 3200,
+      "paid": 1000,
+      "due": 2200
+    }
+  },
+  {
+    "text": "Sharma Sir ko teen kameez formal shirt diya, total 3600, poora advance diya",
+    "expected": {
+      "customer": "Sharma Sir",
+      "lines": [
+        {"name": "Formal Shirt", "qty": 3, "price": 1200}
+      ],
+      "total": 3600,
+      "paid": 3600,
+      "due": 0
+    }
+  },
+  {
+    "text": "Vermaji ne char pant trouser liya, total 7200, 5000 diya baaki udhar",
+    "expected": {
+      "customer": "Verma ji",
+      "lines": [
+        {"name": "Trouser", "qty": 4, "price": 1800}
+      ],
+      "total": 7200,
+      "paid": 5000,
+      "due": 2200
+    }
+  },
+  {
+    "text": "Khan bhai ko das socks moja aur do rumaal diya, total 1320, 1000 abhi diya",
+    "expected": {
+      "customer": "Khan Bhai",
+      "lines": [
+        {"name": "Cotton Socks", "qty": 10, "price": 120},
+        {"name": "Linen Handkerchief", "qty": 2, "price": 60}
+      ],
+      "total": 1320,
+      "paid": 1000,
+      "due": 320
+    }
+  },
+  {
+    "text": "Gupta hardware ko ek blazer coat diya, 4500 bill, 4500 cash",
+    "expected": {
+      "customer": "Gupta Hardware",
+      "lines": [
+        {"name": "Casual Blazer", "qty": 1, "price": 4500}
+      ],
+      "total": 4500,
+      "paid": 4500,
+      "due": 0
+    }
+  },
+  {
+    "text": "Patel bhai ko teen kurta aur teen pajama diye, 6900 bill, 3500 diya baaki udhaar",
+    "expected": {
+      "customer": "Patel Tailor",
+      "lines": [
+        {"name": "Cotton Kurta", "qty": 3, "price": 1500},
+        {"name": "Linen Pajama", "qty": 3, "price": 800}
+      ],
+      "total": 6900,
+      "paid": 3500,
+      "due": 3400
+    }
+  },
+  {
+    "text": "Sharma ji ko nahi nahi Sharma Sir ko do shirt diye, 2400 bill, poora cash",
+    "expected": {
+      "customer": "Sharma Sir",
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "price": 1200}
+      ],
+      "total": 2400,
+      "paid": 2400,
+      "due": 0
+    }
+  },
+  {
+    "text": "Verma ji ko do trouser pant nahi teen trouser pant diye, 5400 bill, 2000 cash",
+    "expected": {
+      "customer": "Verma ji",
+      "lines": [
+        {"name": "Trouser", "qty": 3, "price": 1800}
+      ],
+      "total": 5400,
+      "paid": 2000,
+      "due": 3400
+    }
+  },
+  {
+    "text": "Gupta ji ko ek blazer aur do tie nahi belt diye, 5800 total, 3000 diya",
+    "expected": {
+      "customer": "Gupta Hardware",
+      "lines": [
+        {"name": "Casual Blazer", "qty": 1, "price": 4500},
+        {"name": "Leather Belt", "qty": 2, "price": 650}
+      ],
+      "total": 5800,
+      "paid": 3000,
+      "due": 2800
+    }
+  },
+  {
+    "text": "Mishra ji ko ek kurta diya, bill 2000 sorry 1500 bill, poora cash",
+    "expected": {
+      "customer": "Mishra Cloth",
+      "lines": [
+        {"name": "Cotton Kurta", "qty": 1, "price": 1500}
+      ],
+      "total": 1500,
+      "paid": 1500,
+      "due": 0
+    }
+  },
+  {
+    "text": "Khan bhai ko do jeans diye, bill 4400, 1000 cash nahi 2000 cash diya baaki udhaar",
+    "expected": {
+      "customer": "Khan Bhai",
+      "lines": [
+        {"name": "Denim Jeans", "qty": 2, "price": 2200}
+      ],
+      "total": 4400,
+      "paid": 2000,
+      "due": 2400
+    }
+  },
+  {
+    "text": "Chopra saab ko ek pajama diya 800 bill, actually Chopra ji nahi Patel bhai ko diya poora udhaar",
+    "expected": {
+      "customer": "Patel Tailor",
+      "lines": [
+        {"name": "Linen Pajama", "qty": 1, "price": 800}
+      ],
+      "total": 800,
+      "paid": 0,
+      "due": 800
+    }
+  }
+]

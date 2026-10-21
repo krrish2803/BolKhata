@@ -1,0 +1,188 @@
+[
+  {
+    "id": "corr-1",
+    "startingDraft": {
+      "customer": {"name": "Sharma ji", "id": "sharma_ji_id"},
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "unitPrice": 1200, "lineTotal": 2400},
+        {"name": "Trouser", "qty": 1, "unitPrice": 1800, "lineTotal": 1800}
+      ],
+      "statedTotal": 4200,
+      "total": 4200,
+      "paid": 2000,
+      "due": 2200
+    },
+    "correctionText": "nahi, total 4500",
+    "expected": {
+      "isAmbiguous": false,
+      "total": 4500,
+      "due": 2500
+    }
+  },
+  {
+    "id": "corr-2",
+    "startingDraft": {
+      "customer": {"name": "Sharma ji", "id": "sharma_ji_id"},
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "unitPrice": 1200, "lineTotal": 2400}
+      ],
+      "statedTotal": 2400,
+      "total": 2400,
+      "paid": 0,
+      "due": 2400
+    },
+    "correctionText": "do nahi teen shirt",
+    "expected": {
+      "isAmbiguous": false,
+      "line0_qty": 3,
+      "line0_total": 3600
+    }
+  },
+  {
+    "id": "corr-3",
+    "startingDraft": {
+      "customer": {"name": "Sharma ji", "id": "sharma_ji_id"},
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "unitPrice": 1200, "lineTotal": 2400}
+      ],
+      "statedTotal": 2400,
+      "total": 2400,
+      "paid": 2000,
+      "due": 400
+    },
+    "correctionText": "paid 1000 hi hai",
+    "expected": {
+      "isAmbiguous": false,
+      "paid": 1000,
+      "due": 1400
+    }
+  },
+  {
+    "id": "corr-4",
+    "startingDraft": {
+      "customer": {"name": "Sharma ji", "id": "sharma_ji_id"},
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "unitPrice": 1200, "lineTotal": 2400}
+      ],
+      "statedTotal": 2400,
+      "total": 2400,
+      "paid": 1000,
+      "due": 1400
+    },
+    "correctionText": "Sharma Sir ko likho",
+    "expected": {
+      "isAmbiguous": false,
+      "customerName": "Sharma Sir"
+    }
+  },
+  {
+    "id": "corr-5",
+    "startingDraft": {
+      "customer": {"name": "Verma ji", "id": "verma_ji_id"},
+      "lines": [
+        {"name": "Denim Jeans", "qty": 3, "unitPrice": 2200, "lineTotal": 6600}
+      ],
+      "statedTotal": 6600,
+      "total": 6600,
+      "paid": 3000,
+      "due": 3600
+    },
+    "correctionText": "poora cash de diya",
+    "expected": {
+      "isAmbiguous": false,
+      "paid": 6600,
+      "due": 0
+    }
+  },
+  {
+    "id": "corr-6",
+    "startingDraft": {
+      "customer": {"name": "Khan Bhai", "id": "khan_bhai_id"},
+      "lines": [
+        {"name": "Formal Shirt", "qty": 4, "unitPrice": 1200, "lineTotal": 4800}
+      ],
+      "statedTotal": 4800,
+      "total": 4800,
+      "paid": 4800,
+      "due": 0
+    },
+    "correctionText": "bill 4000 kardo",
+    "expected": {
+      "isAmbiguous": false,
+      "total": 4000
+    }
+  },
+  {
+    "id": "corr-7",
+    "startingDraft": {
+      "customer": {"name": "Gupta Hardware", "id": "gupta_id"},
+      "lines": [
+        {"name": "Leather Belt", "qty": 2, "unitPrice": 650, "lineTotal": 1300}
+      ],
+      "statedTotal": 1300,
+      "total": 1300,
+      "paid": 500,
+      "due": 800
+    },
+    "correctionText": "poora udhaar hai kuch nahi diya",
+    "expected": {
+      "isAmbiguous": false,
+      "paid": 0,
+      "due": 1300
+    }
+  },
+  {
+    "id": "corr-8",
+    "startingDraft": {
+      "customer": {"name": "Sharma ji", "id": "sharma_ji_id"},
+      "lines": [
+        {"name": "Formal Shirt", "qty": 2, "unitPrice": 1200, "lineTotal": 2400}
+      ],
+      "statedTotal": 2400,
+      "total": 2400,
+      "paid": 1000,
+      "due": 1400
+    },
+    "correctionText": "nahi, 4500",
+    "expected": {
+      "isAmbiguous": true,
+      "questionContains": "4500"
+    }
+  },
+  {
+    "id": "corr-9",
+    "startingDraft": {
+      "customer": {"name": "Verma ji", "id": "verma_ji_id"},
+      "lines": [
+        {"name": "Denim Jeans", "qty": 1, "unitPrice": 2200, "lineTotal": 2200}
+      ],
+      "statedTotal": 2200,
+      "total": 2200,
+      "paid": 500,
+      "due": 1700
+    },
+    "correctionText": "change to 1500",
+    "expected": {
+      "isAmbiguous": true,
+      "questionContains": "1500"
+    }
+  },
+  {
+    "id": "corr-10",
+    "startingDraft": {
+      "customer": {"name": "Mishra Cloth", "id": "mishra_id"},
+      "lines": [
+        {"name": "Cotton Kurta", "qty": 2, "unitPrice": 1500, "lineTotal": 3000}
+      ],
+      "statedTotal": 3000,
+      "total": 3000,
+      "paid": 1000,
+      "due": 2000
+    },
+    "correctionText": "2500 kardo",
+    "expected": {
+      "isAmbiguous": true,
+      "questionContains": "2500"
+    }
+  }
+]

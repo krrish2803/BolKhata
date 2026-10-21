@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ask_1",
+    "question": "Sharma ji ka kitna baaki hai?",
+    "expected_type": "balance",
+    "customer": "Sharma ji",
+    "description": "Specific single customer balance query"
+  },
+  {
+    "id": "ask_2",
+    "question": "sabse zyada udhaar kiska hai?",
+    "expected_type": "top_dues",
+    "description": "Ledger top dues query"
+  },
+  {
+    "id": "ask_3",
+    "question": "Cotton Shirt kitni bachi hai?",
+    "expected_type": "stock",
+    "item": "Cotton Shirt",
+    "description": "Stock lookup for specific catalog item"
+  },
+  {
+    "id": "ask_4",
+    "question": "aaj kitni bikri hui?",
+    "expected_type": "sales_summary",
+    "description": "Today's sales total query"
+  },
+  {
+    "id": "ask_5",
+    "question": "Gupta Enterprises ka last bill kab tha?",
+    "expected_type": "recent_entries",
+    "customer": "Gupta Enterprises",
+    "description": "Recent ledger activity for customer"
+  },
+  {
+    "id": "ask_6",
+    "question": "Sharma ka hisaab batao",
+    "expected_type": "ambiguous",
+    "description": "Ambiguous customer question that must propose candidate tap options (Sharma ji vs Sharma Sir)"
+  },
+  {
+    "id": "ask_7",
+    "question": "Verma ji ka kitna hisaab baaki hai?",
+    "expected_type": "balance",
+    "customer": "Verma ji",
+    "description": "Single customer balance lookup"
+  },
+  {
+    "id": "ask_8",
+    "question": "Top 5 dues dikhao",
+    "expected_type": "top_dues",
+    "description": "Top dues list query with limit"
+  },
+  {
+    "id": "ask_9",
+    "question": "Unknown Person ka balance kitna hai?",
+    "expected_type": "unknown_customer",
+    "description": "Unknown customer inquiry that clearly reports customer not found without inventing data"
+  },
+  {
+    "id": "ask_10",
+    "question": "Blue Jeans kitna bacha hai stock mein?",
+    "expected_type": "stock",
+    "item": "Blue Jeans",
+    "description": "Stock inquiry for blue jeans"
+  }
+]
